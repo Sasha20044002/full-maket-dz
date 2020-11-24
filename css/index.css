@@ -194,69 +194,69 @@ body {
 
 .screenshots {
   width: 100%;
-  padding: 50px 50px 30px 50px;
   box-sizing: border-box;
-}
-
-.screenshots-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: 50px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-}
-
-.screenshots .left,
-.screenshots .right {
-  width: 49%;
-  box-sizing: border-box;
 }
 
 .screenshots-title {
   display: block;
+  width: 100%;
   margin: 0 0 24px 0;
   text-align: center;
   font-size: 30px;
   font-family: 'Arial MT', sans-serif;
   color: #445161;
   line-height: 1.2;
-  margin-bottom: 35px;
 }
 
-.screenshots .block {
-  width: 100%;
+.screenshots-item {
+  width: 48%;
   margin: 0 0 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.screenshots .block-img {
+
+.screenshots-item:nth-child(4),
+.screenshots-item:nth-child(5) {
+  margin: 0;
+}
+
+.screenshots-photo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px 0 0;
   background-color: #445161;
-  width: 200px;
-  height: 150px;
 }
 
-.screenshots .block .text-title {
-  margin-top: 0;
+.screenshots-item-txt {
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.screenshots-item-txt h3 {
+  margin: 0 0 0 0;
+  font-size: 30px;
+  font-family: 'Arial MT', sans-serif;
   color: #445161;
-  font-family: 'Arial MT', sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 0;
+  line-height: 1.2;
+  padding: 0;
 }
 
-.screenshots .block .text-1 {
-  margin: 10px 0 0 0;
-  font-family: 'Arial MT', sans-serif;
+.screenshots-item-txt p {
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #333333;
-  width: 359px;
-  height: auto;
+  font-family: 'Arial MT', sans-serif;
+  color: #445161;
+  line-height: 1.2;
+  padding: 0;
 }
 
 @font-face {
@@ -359,11 +359,13 @@ body {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .buy .title {
   width: 100%;
+  display: block;
+  box-sizing: border-box;
   color: #445161;
   line-height: 36px;
   font-style: normal;
@@ -371,7 +373,7 @@ body {
   font-family: "Arial MT", sans-serif;
   font-size: 30px;
   text-align: center;
-  margin: 0 0 29px 0;
+  margin: 0 0 20px 0;
 }
 
 .buy .block {
@@ -383,6 +385,10 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid black;
+}
+
+.buy .block:nth-child(4) {
+  margin: 0;
 }
 
 .buy .block-title {
